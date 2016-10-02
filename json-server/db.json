@@ -1,0 +1,98 @@
+{
+   "games": [
+			{
+                "id": 0,
+                "name": "Fifa 17",
+                "image": "images/g1.jpg",
+                "category": "Sport",
+                "rating": "E for Everyone",
+                "description": "FIFA 17 is an association football video game in the FIFA series, released on 27 September 2016 in North America and 29 September 2016 for the rest of the world.",
+                "x360_price": "$32.00",
+                "ps4_price": "$33.00",
+                "ps3_price": "$31.00",
+                "news": "One of the most unique elements of FIFA 17 is its interesting-sounding campaign mode called The Journey, which follows a rising star's...journey in the soccer world. Despite its consistency over the years, there's always been something missing in FIFA. Drill past the flawlessly recreated stadiums and the blemish-perfect faces, past the stacks of Ultimate Team cards and officially licensed boots, and, no matter how deep you go, you never come across anything close to a footballing soul.",
+                "rating_symbol": "images/e.gif"
+            },
+            {
+                "id": 1,
+                "name": "Forza 3",
+                "image": "images/g2.jpg",
+                "category": "Racing",
+                "rating": "E for Everyone",
+                "description": "Forza Horizon 3 is an open world racing video game developed by Playground Games and published by Microsoft Studios for Xbox One and Microsoft Windows. The game features cross-platform play between the two platforms.",
+                "one_price": "$25.00",
+                "pc_price": "$20.00",
+                "news": "The PC and Xbox One versions of Forza Horizon 3 both launch today, and it looks like you'll be enjoying a gorgeous (and very good) game no matter which platform your play on. As expected, the PC version can look and run much better, but fully taking advantage of what it offers requires some very high-end hardware. Digital Foundry has taken a preliminary look at the two versions of the game, offering a comparison in the video below. It highlights some of the key differences in terms of visual fidelity when locking the PC version at 30 FPS.",
+                "rating_symbol": "images/e.gif"
+            },
+            {
+                "id": 2,
+                "name": "Destiny",
+                "image": "images/g3.jpg",
+                "category": "Action",
+                "rating": "T for Teen",
+                "description": "Rise of Iron is a major expansion for Bungie's first-person shooter, Destiny. The expansion was released on September 20, 2016, as the fourth expansion of Destiny. ",
+                "one_price": "$10.00",
+                "ps4_price": "$5.00",
+                "news": "Bungie has provided updates on the return of two Destiny multiplayer events and discussed some of the current issues players have run into when trying to find better Ghosts and Artifacts. On the multiplayer front, the first Trials of Osiris and Iron Banner events since Rise of Iron's launch will take place in the coming days, Bungie announced. Trials kicks off tomorrow, September 30, at 10 AM PT on an unspecified map. Bungie said it'll play as it always has, but new gear will be available for those who participate.",
+                "rating_symbol": "images/t.gif"
+            },
+            {
+                "id": 3,
+                "name": "Recore",
+                "image": "images/g4.jpg",
+                "category": "Adventure",
+                "rating": "T for Teen",
+                "description": "ReCore is an action-adventure platform video game developed by Comcept and Armature Studio and published by Microsoft Studios for Microsoft Windows and Xbox One. The game was released worldwide in September 2016.",
+                "one_price": "$30.00",
+                "rating_symbol": "images/t.gif"
+            }
+    ],
+  "ourInfo": [
+	{
+        "id": 0,
+        "missionImage": "images/mission.png",
+        "ratingImage": "images/ratings.png",
+		"missionText": "Our mission is to deliever the best product to our customer. But also delievering it with the right price so a customer can afford to buy our products.",
+		"policyText": "Returned product(s) must be in the original packaging and include any manuals, cabling and accessories in sellable condition. We reserve the right to limit returns to unopened or defective products. Defective product(s) will be replaced with a like item, upon return. Terms and conditions of manufacturer's warranty apply to defective video games systems and computer hardware after 30 days. All products that are new with the retail packaging never opened can be returned to byGamez within 30 days regardless of the individual return policy.",
+		"ratingText1": "ESRB assigns age and content ratings for video games and mobile apps, enforces advertising and marketing guidelines  for the video game industry, and helps companies implement responsible online and mobile privacy practices. The Entertainment Software Rating Board (ESRB) ratings provide guidance about video games and apps so that consumers, especially parents, can make informed choices about the ones they deem suitable for their family. ESRB ratings have three parts: Rating Categories suggest age appropriateness Content Descriptors indicate content that may have triggered a particular rating and/or may be of interest or concern Interactive Elements inform about interactive aspects of a product, including the users' ability to interact, the sharing of users' location with others, if personal information may be shared with third parties, if in-app purchases of digital goods are completed, and/or if unrestricted internet access is provided.",
+		"ratingText2": "Packaged or boxed video games available for retail sale or rental in the United States and Canada display the Rating Category on the front of the package and Content Descriptors on the back. They may also display a notice reading Online Interactions Not Rated by the ESRB that indicates possible exposure to user-generated content that has not been considered in the ESRB rating."
+  
+    }
+  ],
+  "gameInfo" : [
+			{
+              "id": 0,
+              "image": "images/xone/xone_1.jpg"
+     
+			},
+			{
+              "id": 1, 
+              "image": "images/xone/xone_2.jpg"
+			},
+			{
+              "id": 2, 
+              "image": "images/xone/xone_3.jpg"
+			},
+			{
+              "id": 3, 
+              "image": "images/x360/360_1.jpg"
+			},
+			{
+              "id": 4, 
+              "image": "images/ps4/ps4_1.jpg"
+			},
+			{
+              "id": 5, 
+              "image": "images/ps4/ps4_2.jpg"
+			},
+			{
+              "id": 6, 
+              "image": "images/ps3/ps3_1.jpg"
+			},
+			{
+              "id": 7, 
+              "image": "images/pc/pc_1.jpg"
+			}
+	]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "byGamez",
+  "authors": [
+    "RahS12 <sonir1993@gmail.com>"
+  ],
+  "description": "Website for a retail business",
+  "main": "index.html",
+  "keywords": [
+    "byGamez"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.6.3",
+	"angular": "~1.4.7",
+    "angular-route": "^1.5.5",
+    "angular-ui-router": "^0.2.18"
+  }
+}

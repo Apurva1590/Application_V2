@@ -1,0 +1,159 @@
+  <!-- Begin Body Content -->
+<div class="container" ng-controller="IndexController">
+    <div class="row">
+        <div class="col-xs-12">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Carousel indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>   
+                <!-- Wrapper for carousel items -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="images/s1.jpg" alt="First Slide" style="width:100%;height:350px;">
+                    </div>
+                    <div class="item">
+                        <img src="images/s2.jpg" alt="Second Slide" style="width:100%;height:350px;">
+                    </div>
+                    <div class="item">
+                        <img src="images/s3.jpg" alt="Third Slide" style="width:100%;height:350px;">
+                    </div>
+                </div>
+				
+				<!-- Carousel controls -->
+				<a class="carousel-control left" href="#myCarousel" data-slide="prev">
+					<span class="glyphicon glyphicon-circle-arrow-left" style="padding-top: 175px"></span>
+				</a>
+				<a class="carousel-control right" href="#myCarousel" data-slide="next">
+					<span class="glyphicon glyphicon-circle-arrow-right" style="padding-top: 175px"></span>
+				</a>
+            </div>
+        </div>
+    </div>
+    
+    <br><br>
+    
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="well well-sm text-center">Popular Games</div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-3" ng-if="!showGame1">
+                <h3>{{message}}</h3>
+        </div>
+        <div class="col-md-3" style="text-align:center;" ng-if="showGame1">
+             
+            <div class="well well-sm text-center">{{game1.name}}</div>
+                    <a href="#" class="tooltip-large" data-toggle="tooltip" data-placement="bottom" title={{game1.description}}>
+                        <img ng-src={{game1.image}} alt={{game1.name}} style="width:200px;height:300px">
+                    </a>
+            <br><br>
+            <div>
+                    <img ng-src={{game1.rating_symbol}}><br>
+            </div>
+                    
+        </div>
+        
+        <div class="col-md-3" ng-if="!showGame2">
+                <h3>{{message}}</h3>
+        </div>
+        <div class="col-md-3" style="text-align:center;" ng-if="showGame2">
+            <div class="well well-sm text-center">{{game2.name}}</div>
+            <a href="#" class="tooltip-large" data-toggle="tooltip" data-placement="bottom" title={{game2.description}}>
+                    <img ng-src={{game2.image}} alt={{game2.name}} style="width:200px;height:300px">
+            </a>
+            <br><br>
+            <div>
+                <img ng-src={{game2.rating_symbol}}><br>
+                
+            </div>
+        </div>
+        
+        <div class="col-md-3" ng-if="!showGame3">
+                <h3>{{message}}</h3>
+        </div>
+        <div class="col-md-3" style="text-align:center;" ng-if="showGame3">
+            <div class="well well-sm text-center">{{game3.name}}</div>
+             <a href="#" class="tooltip-large" data-toggle="tooltip" data-placement="bottom" title={{game3.description}}>
+                    <img ng-src={{game3.image}} alt={{game3.name}} style="width:200px;height:300px">
+            </a>
+            <br><br>
+            <div>
+                <img ng-src={{game3.rating_symbol}}><br>
+            </div>
+        </div>
+        
+        <div class="col-md-3" ng-if="!showGame4">
+                <h3>{{message}}</h3>
+        </div>
+        <div class="col-md-3" style="text-align:center; " ng-if="showGame4">
+            <div class="well well-sm text-center">{{game4.name}}</div>
+            <a href="#" class="tooltip-large" data-toggle="tooltip" data-placement="bottom" title={{game4.description}}>
+                     <img ng-src={{game4.image}} alt={{game4.name}} style="width:200px;height:300px">
+            </a>
+            <br><br>
+            <div>
+               <img ng-src={{game4.rating_symbol}}><br>
+            </div>
+        </div>
+    </div>
+    
+    <br><br>
+    
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="well well-sm text-center">Latest Announcements</div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-12" ng-if="!showGame3">
+            <h3>{{message}}</h3>
+        </div>
+        <div class="col-md-12" ng-if="showGame3">
+            <div class="panel panel-info">
+              <div class="panel-heading">{{game3.name}}</div>
+              <div class="panel-body">
+                  {{game3.news}}
+              </div>
+            </div>
+        </div>
+        
+        <div class="col-md-12" ng-if="!showGame2">
+            <h3>{{message}}</h3>
+        </div>
+        <div class="col-md-12" ng-if="showGame2">
+            <div class="panel panel-success">
+              <div class="panel-heading">{{game2.name}}</div>
+              <div class="panel-body">
+                    {{game2.news}} 
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-12" ng-if="!showGame1">
+            <h3>{{message}}</h3>
+        </div>
+        <div class="col-md-12" ng-if="showGame1">
+            <div class="panel panel-info">
+              <div class="panel-heading">{{game1.name}}</div>
+              <div class="panel-body">
+                   {{game1.news}} 
+                </div>
+            </div>
+        </div>
+    </div>
+	
+</div>
+ <!-- End Body Content -->
+<script>
+// Showing and hiding tooltip with different speed
+$(".tooltip-large").tooltip({
+       delay: {show: 0, hide: 100}
+});
+</script>
+

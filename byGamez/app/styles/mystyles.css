@@ -1,0 +1,103 @@
+header{
+    background-color: #d6b3b3;
+    height: 150px;
+}
+footer{
+    background-color: #d6b3b3;
+}
+.header_btn{
+    background: #0b183b;
+    color: #adaeca;
+    width: 80px;
+}
+.header_btn:hover{
+    color: #0b183b;
+    border: 2px solid #0b183b;
+    background: none;
+}
+.navbar-brand{
+    border: 1px solid #adaeca;
+    border-radius: 25px; 
+}
+#nav.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:10;
+}
+.navbar-custom {
+  background-color: #0b183b;
+  border-color: #adaeca;
+}
+
+
+.navbar-custom .navbar-brand {
+  color: #adaeca;
+}
+
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-brand:focus {
+  color: #0b183b;
+}
+.navbar-custom .navbar-text {
+  color: #adaeca;
+}
+.navbar-custom .navbar-nav > li > a {
+  color: #adaeca;
+}
+
+.navbar-custom .navbar-nav > li > a:hover{
+    background: #adaeca;
+    color:#0b183b;
+}
+.navbar-custom .navbar-nav > li > a:focus {
+  color: #0b183b;
+  background: #adaeca;
+}
+
+.navbar-custom .navbar-nav > li > .dropdown-menu {
+  background-color: #0b183b;
+}
+.navbar-custom .navbar-nav > li > .dropdown-menu > li > a {
+  color: #adaeca;
+}
+.navbar-custom .navbar-nav > li > .dropdown-menu > li > a:hover,
+.navbar-custom .navbar-nav > li > .dropdown-menu > li > a:focus {
+  color: #0b183b;
+  background: #adaeca;
+}
+.navbar-custom .navbar-nav > li > .dropdown-menu > li > .divider {
+  background-color: none;
+}
+.navbar-custom .navbar-nav .open .dropdown-menu > .active > a,
+.navbar-custom .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar-custom .navbar-nav .open .dropdown-menu > .active > a:focus {
+  color: #0b183b;
+  background-color: none;
+}
+
+.navbar-custom .navbar-toggle {
+  border-color: #adaeca;
+}
+
+.navbar-custom .navbar-toggle .icon-bar {
+  background-color: #adaeca;
+}
+
+.navbar-custom .navbar-toggle:hover{
+  border-color:#2d7353;
+}
+
+
+.navbar-custom .navbar-toggle:hover .icon-bar {
+    background-color: #2d7353;
+}
+.active{
+    border: 1px solid #adaeca;
+    background: none;
+    color: #0b183b;
+}
+.well-sm{
+    border-radius: 0 !important;
+}
+

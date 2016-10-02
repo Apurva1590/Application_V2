@@ -1,0 +1,64 @@
+<!-- Start Body Content -->   
+<div class="container" ng-controller="AboutController">
+    <div class="row" >
+        <div class="col-md-12" ng-if=!showInfo>
+            <h4>{{message}}</h4>
+        </div>
+        <div class="col-md-12" ng-if=showInfo>
+            <img ng-src={{info.missionImage}} alt="our_mission_img" style="width:100%">
+        </div>
+        
+        <div class="col-md-12" ng-if=!showInfo>
+            <h4>{{message}}</h4>
+        </div>
+        <div class="col-md-12" style="text-align: center" ng-if=showInfo>
+             <h3>{{info.missionText}}</h3>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-xs-12" ng-if=!showInfo>
+            <h4>{{message}}</h4>
+        </div>
+        <div class="col-xs-12" ng-if=showInfo>
+            <div class="well well-sm text-center">Our Policy</div>
+            {{info.policyText}}
+        </div>
+    </div>
+    <br><br>
+    <div class="row">
+        <div class="col-md-12" ng-if=!showInfo>
+            <h4>{{message}}</h4>
+        </div>
+        <div class="panel-group col-md-12" id="accordion" ng-if=showInfo>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" target="_self">Our Product's ESRB Ratings</a>
+                </h4>
+              </div>
+              <div id="collapse1" class="panel-collapse collapse in">
+                <div class="panel-body"> 
+                    {{info.ratingText1}}
+                  </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" target="_self">More on ESRB Ratings</a>
+                </h4>
+              </div>
+              <div id="collapse2" class="panel-collapse collapse">
+                <div class="panel-body">
+                   {{info.ratingText2}}
+                <br>
+                  
+                <img ng-src={{info.ratingImage}} alt = "rating_img" style = "display:block; margin: auto; width:35%">
+                </div>
+              </div>
+            </div>
+        </div> 
+    </div>
+</div>
+ <!-- End Body Content -->

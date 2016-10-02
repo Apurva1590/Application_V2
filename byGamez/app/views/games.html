@@ -1,0 +1,241 @@
+<!-- Start Body Content -->   
+<div class="container" ng-controller="GamesController">
+  <div class="row">
+      <div class="col-xs-12">
+       <ul class="nav nav-tabs" id="myTab">
+        <li class="dropdown">
+            <a data-toggle="dropdown" class="dropdown-toggle" href="#" target="_self">Xbox <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                <li><a data-toggle="tab" href="#one" target="_self">Xbox One</a></li>
+                <li><a data-toggle="tab" href="#360" target="_self">Xbox 360</a></li>
+            </ul>
+        </li>
+           
+        <li class="dropdown">
+            <a data-toggle="dropdown" class="dropdown-toggle" href="#" target="_self">Playstation <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                <li><a data-toggle="tab" href="#4" target="_self">PS4</a></li>
+                <li><a data-toggle="tab" href="#3" target="_self">PS3</a></li>
+            </ul>
+        </li>
+    
+        <li><a data-toggle="tab" href="#pc" target="_self">PC</a></li>
+        
+        </ul>
+        <div class="tab-content">
+            <div id="one" class="tab-pane fade in active">
+                <h3>Xbox one Games</h3>
+                <br>
+                <div class="row">
+                    <div class="col-md-3" ng-if="!showGameInfo1">
+                        <h4>{{message}}</h4>
+                    </div>
+                    <div class="col-md-3" ng-if="showGameInfo1">
+                        
+                        <img ng-src={{gameInfo1.image}} alt = "forza3">
+                    </div>
+                    
+                    <div class="col-md-9" ng-if="!showOneGame2">
+                        <h4>{{message}}</h4>
+                    </div>
+                    <div class="col-md-9" ng-if="showOneGame2"><br>
+                        <ul class="list-group">
+                          <li class="list-group-item"><b>Description:</b> 
+                              {{oneGame2.description}}
+                          </li>
+                          <li class="list-group-item"><b>Price: </b>{{oneGame2.one_price}}</li>
+                          <li class="list-group-item"><b>Rating: </b> {{oneGame2.rating}}</li>
+                          <li class="list-group-item"><b>Category: </b>{{oneGame2.category}}</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3" ng-if="!showGameInfo2">
+                        <h4>{{message}}</h4>
+                    </div>
+                    <div class="col-md-3" ng-if="showGameInfo2">
+                        <img ng-src={{gameInfo2.image}} alt = "">
+                    </div>
+                    
+                    <div class="col-md-9" ng-if="!showOneGame3">
+                        <h4>{{message}}</h4>
+                    </div>
+                    <div class="col-md-9" ng-if="showOneGame3"><br>
+                        <ul class="list-group">
+                          <li class="list-group-item"><b>Description:</b> 
+                              {{oneGame3.description}}
+                          </li>
+                          <li class="list-group-item"><b>Price: </b>{{oneGame3.one_price}}</li>
+                          <li class="list-group-item"><b>Rating: </b> {{oneGame3.rating}}</li>
+                          <li class="list-group-item"><b>Category: </b>{{oneGame3.category}}</li>
+                        </ul>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-3" ng-if="!showGameInfo3">
+                        <h4>{{message}}</h4>
+                    </div>
+                    <div class="col-md-3" ng-if="showGameInfo3">
+                        
+                        <img ng-src={{gameInfo3.image}} alt = "">
+                    </div>
+                    
+                    <div class="col-md-9" ng-if="!showOneGame4">
+                        <h4>{{message}}</h4>
+                    </div>
+                    <div class="col-md-9" ng-if="showOneGame4"><br>
+                        <ul class="list-group">
+                          <li class="list-group-item"><b>Description:</b> 
+                              {{oneGame4.description}}
+                          </li>
+                          <li class="list-group-item"><b>Price: </b>{{oneGame4.one_price}}</li>
+                          <li class="list-group-item"><b>Rating: </b> {{oneGame4.rating}}</li>
+                          <li class="list-group-item"><b>Category: </b>{{oneGame4.category}}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="360" class="tab-pane fade">
+                <h3>Xbox 360 Games</h3>
+                <br>
+                <div class="row">
+                    <div class="col-md-3" ng-if="!showGameInfo4">
+                        <h4>{{message}}</h4>
+                    </div>
+                    <div class="col-md-3" ng-if="showGameInfo4">
+                        
+                        <img ng-src={{gameInfo4.image}} alt = "">
+                    </div>
+                    
+                     <div class="col-md-9" ng-if="!showOneGame1">
+                        <h4>{{message}}</h4>
+                    </div>
+                    <div class="col-md-9" ng-if="showOneGame1"><br>
+                        <ul class="list-group">
+                          <li class="list-group-item"><b>Description:</b> 
+                              {{oneGame1.description}}
+                          </li>
+                          <li class="list-group-item"><b>Price: </b>{{oneGame1.x360_price}}</li>
+                          <li class="list-group-item"><b>Rating: </b> {{oneGame1.rating}}</li>
+                          <li class="list-group-item"><b>Category: </b>{{oneGame1.category}}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="4" class="tab-pane fade">
+                <h3>PS4 Games</h3>
+                <br>
+                <div class="row">
+                    <div class="col-md-3" ng-if="!showGameInfo5">
+                        <h4>{{message}}</h4>
+                    </div>
+                    <div class="col-md-3" ng-if="showGameInfo5">
+                        
+                        <img ng-src={{gameInfo5.image}} alt = "">
+                    </div>
+                    
+                    <div class="col-md-9" ng-if="!showOneGame1">
+                        <h4>{{message}}</h4>
+                    </div>
+                    <div class="col-md-9" ng-if="showOneGame1"><br>
+                        <ul class="list-group">
+                          <li class="list-group-item"><b>Description:</b> 
+                              {{oneGame1.description}}
+                          </li>
+                          <li class="list-group-item"><b>Price: </b>{{oneGame1.ps4_price}}</li>
+                          <li class="list-group-item"><b>Rating: </b> {{oneGame1.rating}}</li>
+                          <li class="list-group-item"><b>Category: </b>{{oneGame1.category}}</li>
+                        </ul>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-3" ng-if="!showGameInfo6">
+                        <h4>{{message}}</h4>
+                    </div>
+                    <div class="col-md-3" ng-if="showGameInfo6">
+                        
+                        <img ng-src={{gameInfo6.image}} alt = "">
+                    </div>
+                    
+                    <div class="col-md-9" ng-if="!showOneGame3">
+                        <h4>{{message}}</h4>
+                    </div>
+                    <div class="col-md-9" ng-if="showOneGame3"><br>
+                        <ul class="list-group">
+                          <li class="list-group-item"><b>Description:</b> 
+                              {{oneGame3.description}}
+                          </li>
+                          <li class="list-group-item"><b>Price: </b>{{oneGame3.ps4_price}}</li>
+                          <li class="list-group-item"><b>Rating: </b> {{oneGame3.rating}}</li>
+                          <li class="list-group-item"><b>Category: </b>{{oneGame3.category}}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="3" class="tab-pane fade">
+                <h3>PS3 Games</h3>
+                <br>
+                <div class="row">
+                    <div class="col-md-3" ng-if="!showGameInfo7">
+                        <h4>{{message}}</h4>
+                    </div>
+                    <div class="col-md-3" ng-if="showGameInfo7">
+                        
+                        <img ng-src={{gameInfo7.image}} alt = "">
+                    </div>
+                    
+                    <div class="col-md-9" ng-if="!showOneGame1">
+                        <h4>{{message}}</h4>
+                    </div>
+                    <div class="col-md-9" ng-if="showOneGame1"><br>
+                        <ul class="list-group">
+                          <li class="list-group-item"><b>Description:</b> 
+                              {{oneGame1.description}}
+                          </li>
+                          <li class="list-group-item"><b>Price: </b>{{oneGame1.ps3_price}}</li>
+                          <li class="list-group-item"><b>Rating: </b> {{oneGame1.rating}}</li>
+                          <li class="list-group-item"><b>Category: </b>{{oneGame1.category}}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="pc" class="tab-pane fade">
+                <h3>PC Games</h3>
+                <br>
+                <div class="row">
+                    <div class="col-md-3" ng-if="!showGameInfo8">
+                        <h4>{{message}}</h4>
+                    </div>
+                    <div class="col-md-3" ng-if="showGameInfo8">
+                        
+                        <img ng-src={{gameInfo8.image}} alt = "">
+                    </div>
+                    
+                    <div class="col-md-9" ng-if="!showOneGame2">
+                        <h4>{{message}}</h4>
+                    </div>
+                    <div class="col-md-9" ng-if="showOneGame2"><br>
+                        <ul class="list-group">
+                          <li class="list-group-item"><b>Description:</b> 
+                              {{oneGame2.description}}
+                          </li>
+                          <li class="list-group-item"><b>Price: </b>{{oneGame2.pc_price}}</li>
+                          <li class="list-group-item"><b>Rating: </b> {{oneGame2.rating}}</li>
+                          <li class="list-group-item"><b>Category: </b>{{oneGame2.category}}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+      </div>
+     
+  </div>
+  
+</div>
+<br><br>
+ <!-- End Body Content -->
